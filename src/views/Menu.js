@@ -1,10 +1,9 @@
-// @flow
-import React from "react";
-import styles from "./style.css";
+import React from 'react';
+import styles from './style.css';
 
-const Menu = (): * => (
+const Menu = () => (
   <nav>
-    <div className={styles["toggle-btn"]}>☰</div>
+    <div className={styles['toggle-btn']}>☰</div>
   </nav>
 );
 
