@@ -1,33 +1,33 @@
-import webpack from "webpack";
-import Config from "webpack-config";
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import autoprefixer from "autoprefixer";
-import precss from "precss";
+import webpack from 'webpack';
+import Config from 'webpack-config';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import autoprefixer from 'autoprefixer';
+import precss from 'precss';
 
 export default new Config().merge({
-  entry: "./client/index.js",
+  entry: './client/index.js',
   output: {
-    path: `${__dirname}/../public`
+    path: `${__dirname}/../public`,
   },
   module: {
     loaders: [
       {
         test: /.jsx?$/,
-        loader: "babel-loader",
+        loader: 'babel-loader',
         options: {
-          cacheDirectory: true
+          cacheDirectory: true,
         },
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./client/index.html",
-      inject: "body"
+      template: './client/index.html',
+      inject: 'body',
     }),
     new webpack.LoaderOptionsPlugin({
-      options: { postcss: [precss, autoprefixer] }
-    })
-  ]
+      options: { postcss: [precss, autoprefixer] },
+    }),
+  ],
 });
