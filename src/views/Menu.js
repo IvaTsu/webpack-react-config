@@ -3,7 +3,7 @@ import styles from './style.css';
 
 const Menu = () => (
   <nav>
-    <div className={styles['toggle-btn']}>☰</div>
+    <div className={styles['toggle-btn']}>Hello</div>
   </nav>
 );
 
