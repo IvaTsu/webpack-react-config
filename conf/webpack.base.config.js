@@ -5,7 +5,7 @@ import autoprefixer from 'autoprefixer';
 import precss from 'precss';
 
 export default new Config().merge({
-  entry: './client/index.js',
+  entry: './src/index.js',
   output: {
     path: `${__dirname}/../public`,
   },
@@ -23,7 +23,7 @@ export default new Config().merge({
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './client/index.html',
+      template: './src/index.html',
       inject: 'body',
     }),
     new webpack.LoaderOptionsPlugin({
