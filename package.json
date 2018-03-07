@@ -7,8 +7,8 @@
     "test": "jest",
     "build-dev": "set NODE_ENV=development&& babel-node server.js",
     "build-prod": "set NODE_ENV=production&& webpack && babel-node server.js",
-    "lint": "eslint client/",
-    "lint:fix": "eslint client/ --fix",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
     "flow": "flow"
   },
   "repository": {
