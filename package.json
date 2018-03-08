@@ -5,27 +5,28 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build-dev": "set NODE_ENV=development&& babel-node server.js",
-    "build-prod": "set NODE_ENV=production&& webpack && babel-node server.js",
+    "build-dev": "babel-node server.js",
+    "build-prod": "webpack && babel-node server.js",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
     "flow": "flow"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IvaTsu/"
+    "url": "git+https://github.com/IvaTsu/webpack-react-config.git"
   },
   "keywords": [
-    "webapp",
+    "starter",
+    "kit",
     "react",
     "webpack"
   ],
   "author": "IvTs",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IvaTsu//issues"
+    "url": "https://github.com/IvaTsu/webpack-react-config/issues"
   },
-  "homepage": "https://github.com/IvaTsu/#readme",
+  "homepage": "https://github.com/IvaTsu/webpack-react-config/#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.2",
     "babel-cli": "^6.26.0",
@@ -68,14 +69,15 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "dotenv": "^5.0.1",
     "eslint": "^4.13.0",
     "express": "^4.16.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
-    "redux-saga": "^0.16.0",
     "react-router-dom": "^4.2.2",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0"
   }
 }
