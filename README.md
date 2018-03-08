@@ -21,7 +21,7 @@ To run it on your machine, follow these steps:
 - `npm build-dev` to enable live reload
 - `npm build-prod` for production
 - Open `localhost:7700` to see results
-NOTE: it is needed to create a `.env` file with the following content: `NODE_ENV=development` to run `npm run build-dev` or `NODE_ENV=production` to run `npm run build-prod`
+- *NOTE:* it is needed to create a `.env` file with the following content: `NODE_ENV=development` to run `npm run build-dev` or `NODE_ENV=production` to run `npm run build-prod`
 
 ## Running the tests
 
